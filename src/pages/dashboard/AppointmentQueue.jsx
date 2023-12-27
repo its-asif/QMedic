@@ -16,7 +16,7 @@ const AppointmentQueue = () => {
                 name: "Mahedi Hassen",
                 appointmentTime: "06:45 PM",
                 isPresent: true,
-            }
+            },
         ]
     }
 
@@ -27,7 +27,7 @@ const AppointmentQueue = () => {
             <h2 className="text-xl ml-10">{appointmentQueueData.hospital}</h2>
             
             <div className="overflow-x-auto m-10">
-                <table className="table">
+                <table className="table table-zebra">
                     {/* table head */}
                     <thead>
                     <tr>
@@ -42,7 +42,7 @@ const AppointmentQueue = () => {
                         {
                             appointmentQueueData.patients.map((patient, index) => (
                                 <tr key={patient.id}>
-                                    
+
                                     <th>{index + 1}</th>
                                     <td>{patient.name}</td>
                                     <td>{patient.appointmentTime}</td>

@@ -5,6 +5,7 @@ import Main from "../layout/Main";
 import Home from "../pages/home/Home";
 import Dashboard from "../layout/Dashboard";
 import AppointmentQueue from "../pages/dashboard/AppointmentQueue";
+import AppointmentList from "../pages/dashboard/adminSection/AppointmentList";
 
   
   const router = createBrowserRouter([
@@ -25,6 +26,10 @@ import AppointmentQueue from "../pages/dashboard/AppointmentQueue";
           {
             path: "/dashboard/appointmentQueue",
             element: <AppointmentQueue />,
+          },
+          {
+            path: "/dashboard/appointments",
+            element: <AppointmentList />,
           },
       ],
       },
