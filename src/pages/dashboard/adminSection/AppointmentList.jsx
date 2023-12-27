@@ -66,11 +66,11 @@ const AppointmentList = () => {
                     <tbody>
                         {
                             appointmentList.map((appointment, index) => (
-                                <tr key={appointment.appointment_id}>
+                                <tr key={appointment.appointment_id} >
                                     <th>{index + 1}</th>
                                     <td>{appointment.date}</td>
                                     <td>{appointment.time}</td>
-                                    <td className="btn btn-sm" >{appointment.patients}</td>
+                                    <td > <div className="btn btn-sm" >{appointment.patients}</div></td>
                                     <td>
                                         {
                                             isToday(appointment.date) ? (
